@@ -1,0 +1,145 @@
+//variabler
+$header-font: 'Play', sans-serif;
+$paragraf: 'Ubuntu Mono', monospace;
+$font-weight: 700;
+$font-size:50px;
+$header-color: #353434;
+$font-color:rgb(204, 200, 200);
+$my-margin: 10px;
+$center: center;
+$width: 100%;
+$top: 50px;
+$none: none;
+$inline: inline;
+$underline: underline;
+
+//mixins
+@mixin fontandweight{
+    font-family: $header-font;
+    font-weight: $font-weight;
+}
+@mixin flex($my-margin:30px){
+    display: flex;
+    flex-wrap: wrap;
+}
+@mixin list-convert{
+    list-style: $none;
+    li{
+        display: $inline;
+        a{
+            text-decoration: $none;
+            font-family: $paragraf;
+            font-weight: $font-weight;
+            &:hover{
+                text-decoration: $underline;
+            }
+        }
+    }
+}
+*{
+    margin: 0;
+    scroll-padding: 0;
+}
+body{
+    background-color: rgb(46, 44, 44);
+}
+h1{
+    @include fontandweight();
+    color: $header-color;
+}
+h2, h3, h4{
+    @include fontandweight();
+    color: $font-color;
+}
+
+p, figcaption{
+    font-family: $paragraf;
+    color: $font-color;
+}
+
+.header{
+    background-image: url(images/header-unsplash.jpg);
+    background-position: $center;
+    background-repeat: no-repeat;
+    height: 25vh;
+    @include flex();
+    justify-content: space-between;
+    align-items: $center;
+    h1{ 
+        font-size: $font-size;
+        margin-left: 30px;
+    } 
+    .menu{
+        @include list-convert();
+        a{
+            font-size: ($font-size - 25);
+            margin:20px;
+            color: $header-color;
+        }
+    }        
+}
+
+.sci-fi{
+    //help
+    @include flex();
+    justify-content: $center;
+    margin-top: $top;
+    font-size: ($font-size - 25);
+    .title{
+        @extend .sci-fi;
+        width: $width;
+        
+    }
+}
+.description{
+    @include flex();
+    justify-content: $center;
+    .info{
+        margin-top: ($top - 25);
+        width: 65%;
+        line-height: 150%;
+    }
+}
+.top-3{
+    background-color: lighten($header-color,20%);
+    margin-top: $top;
+    @include flex();
+    width: $width;
+    justify-content: $center;
+    
+    .titel{
+        @extend .top-3;
+        font-size: ($font-size - 30);
+    }
+    .film{
+        width: 30%;
+        margin: calc(1.5% - 1px);
+        line-height: 150%;
+        h4{
+            @extend .top-3;
+            justify-content: $center;
+        }
+        img{
+            width: 500px;
+        } 
+    }
+}
+.footer{
+    height: 50px;
+    @include flex();
+    justify-content: $center;
+    .copy{
+        width: $width;
+        @extend .footer;
+    }
+    .social{
+        @include list-convert();
+        
+        a{
+            color: $font-color;
+            margin-top: $top;
+            padding:21px;
+        }
+        
+    }
+}

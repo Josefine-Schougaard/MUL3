@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  scroll-padding: 0;
+}
+
+body {
+  background-color: #2e2c2c;
+}
+
+h1 {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  color: #353434;
+}
+
+h2, h3, h4 {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  color: #ccc8c8;
+}
+
+p, figcaption {
+  font-family: "Ubuntu Mono", monospace;
+  color: #ccc8c8;
+}
+
+.header {
+  background-image: url(images/header-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header h1 {
+  font-size: 50px;
+  margin-left: 30px;
+}
+
+.header .menu {
+  list-style: none;
+}
+
+.header .menu li {
+  display: inline;
+}
+
+.header .menu li a {
+  text-decoration: none;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 700;
+}
+
+.header .menu li a:hover {
+  text-decoration: underline;
+}
+
+.header .menu a {
+  font-size: 25px;
+  margin: 20px;
+  color: #353434;
+}
+
+.sci-fi, .sci-fi .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.sci-fi .title {
+  width: 100%;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.description .info {
+  margin-top: 25px;
+  width: 65%;
+  line-height: 150%;
+}
+
+.top-3, .top-3 .titel, .top-3 .film h4 {
+  background-color: #686767;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top-3 .titel, .top-3 .film h4 .titel {
+  font-size: 20px;
+}
+
+.top-3 .film, .top-3 .film h4 .film {
+  width: 30%;
+  margin: calc(1.5% - 1px);
+  line-height: 150%;
+}
+
+.top-3 .film h4 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top-3 .film img {
+  width: 500px;
+}
+
+.footer, .footer .copy {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .copy {
+  width: 100%;
+}
+
+.footer .social {
+  list-style: none;
+}
+
+.footer .social li {
+  display: inline;
+}
+
+.footer .social li a {
+  text-decoration: none;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 700;
+}
+
+.footer .social li a:hover {
+  text-decoration: underline;
+}
+
+.footer .social a {
+  color: #ccc8c8;
+  margin-top: 50px;
+  padding: 21px;
+}
+/*# sourceMappingURL=style.css.map */

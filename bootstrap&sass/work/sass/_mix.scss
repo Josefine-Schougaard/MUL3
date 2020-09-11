@@ -1,0 +1,14 @@
+@mixin smallheader{
+    font-family: $header-font;
+    font-weight: 700;
+    font-size: 40px;
+}
+@mixin paragraf{
+    font-family: $paragraf-font;
+    font-size: 18px;
+}
+@mixin box{
+    border: 2px solid rgb(134, 133, 133);
+    border-radius: 4px;
+    background-color: $background;
+}

@@ -1,0 +1,97 @@
+.site {
+    padding: $spacer;
+    font-family: sans-serif;
+}
+.site-header {
+    display: flex;
+    flex-direction: column;
+    // logo
+    .site-title {
+        font-size: 16px;
+        margin: 0;
+        a {
+            color: $font-color;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+    .main-navigation {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-top: -20px;
+        // links i menu
+        a {
+            color: $font-color;
+            font-weight: 400;
+            font-size: 20px;
+            margin-left: $spacer;
+            margin-right: $spacer;
+        }
+        // hamburger-knappen
+        .menu-toggle {
+            padding: 0;
+            border: none;
+            background-color: white;
+        }
+        .menu {
+            align-self: flex-start;
+            .nav-menu {
+                margin-top: $spacer*2;
+            }
+        }
+    }
+}
+
+h1, h2, h3{
+    @include Headfont;
+}
+p{
+    @include paragraf;
+}
+a{
+    @include links;
+}
+
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 40px;
+}
+
+.entry-title{
+    text-align: center;
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-bottom: 100px;
+}
+.clients{
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    .site-header {
+        flex-direction: row;
+        .main-navigation {
+            display: flex;
+            justify-content: flex-end;
+            .menu-menu-1-container {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                .menu-item {
+                    margin-left: $spacer;
+                }
+            }
+        }
+    }
+}
+
+// stopklods
+@media screen and (min-width: 1200px) {
+    .site {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}

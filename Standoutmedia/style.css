@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*genrel styling*/
+p, h1, h2, h3, a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{
+    float: left;
+}
+.logo, img{
+    width: 150px;
+    height: auto;
+    margin-top: 5px;
+}
+.fas, .fab{
+    color: #7a0202;
+    margin: 0px 5px 0px 5px;
+}
+
+.container{
+    width: 100%;
+}
+
+.frame{
+    width: 70%;
+    margin: 0 auto;
+}
+.header{
+    background-color: #fff;
+    height: 80px;
+}
+
+.offerline{
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+/*Mobile*/
+/*navigatil mobile*/
+.computernav{
+    display: none;
+}
+.burgermenu_btn{
+    float: right;
+    color: #000;
+    padding: 10px;
+    border-style: none;
+    font-size: 30px;
+}
+.mobilenav{
+    float: right;
+    text-align: end;
+    margin: 15px 0 15px 0;
+    background-color: #fff;
+    z-index: 2;
+    position: relative;
+}
+
+.mobilenav li{
+    list-style: none;
+    margin-top: 10px;
+    text-align: end;
+    
+}
+
+.mobilenav a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+.mobilenav .currentpage{
+    text-decoration: underline;
+    text-decoration-color: #ecc511;
+}
+
+.mobilenav a:active{
+    text-decoration: underline;
+}
+.mobilenav a:hover{
+    text-decoration: underline;
+    text-decoration-color: #ecc511;
+}
+.banner{
+    background-image: url(images/slider.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    position: relative;
+}
+.offer{
+    text-decoration: none;
+    background-color: #7a0202;
+    padding: 5px 15px 5px 15px;
+    color: #fff;
+}
+.billboardtext{
+    margin-left: 15%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.services{
+    text-align: center;
+    margin: 40px 15% 40px 15%;
+}
+.intro{
+    margin-bottom: 10px;
+}
+.service{
+    margin-top: 20px;
+}
+.service p{
+    margin-top: 10px;
+    font-weight: 600;
+}
+.info{
+    background-image: url(images/trae.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+.advise{
+    margin: 30px 15% 30px 15%;
+}
+.advise h3, p{
+    margin-bottom: 15px;
+}
+.experience{
+    margin: 30px 15% 30px 15%;
+}
+.experience h3, p{
+    margin-bottom: 15px;
+}
+.affiliate{
+    margin-bottom: 30px;
+}
+.contact{
+    text-align: center;
+    margin: 30px 15% 30px 15%;
+}
+.cont-info h3, p{
+    margin-bottom: 15px;
+}
+.formula input,textarea{
+    display: inline-block;
+    width: 70%;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.formula textarea{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.submit{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #7a0202;
+    width: 70%;
+    border: none;
+    padding: 5px;
+}
+.maps{
+    margin-top: 30px;
+}
+.maps iframe{
+    width: 70%;
+    height: auto;
+}
+.footer{
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.footer-info{
+    margin: 15px 0px 15px 0px;
+    
+}
+.adress{
+    margin: 0px 15% 0px 15%;
+}
+
+/*tablet*/
+@media screen and (min-width: 600px){
+    .services{
+        width: 70%;
+        margin: 40px 15% 500px 15%;
+        text-align: center;
+    }
+    .service{
+        display: inline;
+        width: 50%;
+        float: left;
+    }
+    .info{
+        height: 700px;
+    }
+}
+/*small screen*/
+@media screen and (min-width: 1280px){
+    .burgermenu{
+        display: none;
+    }
+    .computernav{
+        display: inline;
+        float: right;
+        text-align: end;
+        z-index: 2;
+        position: relative;
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .computernav li{
+        list-style: none;
+        margin-top: 10px;
+        text-align: end;
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 10px;
+        
+    }
+    .computernav a{
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #000;
+        font-size: 13px;
+        margin-left: 10px;
+        font-weight: 600;
+    }
+    .computernav .currentpage{
+        text-decoration: underline;
+        text-decoration-color: #ecc511;
+    }
+    .computernav a:active{
+        text-decoration: underline;
+    }
+    .computernav a:hover{
+        text-decoration: underline;
+        text-decoration-color: #ecc511;
+    }
+    .phone{
+        color: #ecc511;
+    }
+    .banner{
+        height: 300px;
+    }
+    .services{
+        margin: 40px 15% 350px 15%;
+    }
+    .services p{
+        margin-right: 35%;
+        margin-left: 35%;
+    }
+    .logo, img{
+        width: 200px;
+        height: auto;
+        margin-top: 5px;
+    }
+    .service{
+        display: inline;
+        width: 25%;
+        text-align: center;
+    }
+    .info{
+        height: 400px;
+        text-align: center;
+        width: 100%;
+    }
+    .advise{
+        width: 35%;
+        text-align: left;
+        float: left;
+        margin: 30px 0px 30px 15%;
+    }
+    .experience{
+        width: 35%;
+        text-align: left;
+        float: right;
+        margin: 30px 15% 30px 0px;
+    }
+    .affiliate-logos{
+        display: inline-block;
+        width: 100%;
+    }
+    .affiliate{
+        display: inline;
+        margin: 0px 5% 30px 5%;
+    }
+    .cont-info{
+        margin: 0px 100px 30px 100px;
+    }
+    .formula input,textarea{
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .formula textarea{
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        height: 80px;
+    }
+    .submit{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        background-color: #7a0202;
+        width: 100%;
+        border: none;
+        padding: 5px;
+        float: left; 
+    }
+    .formula{
+        display: inline-block;
+        width: 35%;
+    }
+    form{
+        display: inline;
+    }
+    .maps{
+        margin-top: 0px;
+        display: inline-block;
+        width: 35%;
+        height: auto;
+    }
+    .maps iframe{
+        width: 95%;
+        height: 190px;
+    }
+    .footerline{
+        width: 100%;
+        display: inline-block;
+    }
+    .footer-info{
+        display: inline-block;
+    }
+    .footer-info img{
+        height: 80px;
+        width: auto;
+    }
+    .ankenaevn{
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: right;
+    }
+    .bottom{
+        width: 70%;
+        display: inline-block;
+    }
+    .adress{
+        display: inline-block;
+        text-align: left;
+        margin: 0px 10% 0px 0%;
+    }
+    .design{
+        display: inline-block;
+        text-align: right;
+    }
+}

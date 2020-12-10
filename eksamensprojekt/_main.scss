@@ -1,0 +1,62 @@
+body{
+    background-color: $bgcolor;
+}
+h2,h5{
+    @include headfont();
+}
+h3,h4{
+    @include secfont();
+}
+p{
+    @include secfont();
+    font-size: 25px;
+}
+.head{
+    img{
+        height: 60px;
+        width: auto;
+    }
+}
+#canvas{
+    border: solid 2px $purple;
+}
+.controlcenter{
+    border: solid 4px $dgrey;
+    background-color: $lgrey;
+    p{
+        color: $black;
+    }
+    .arrows{
+        width: 150px;
+        height: auto;
+    }
+    a:hover{
+        color: #fff;
+    }
+}
+.otherusers{
+    border: solid 4px $dgrey;
+    background-color: $lgrey;
+}
+.btn{
+    font-family: $mainfont;
+    background-color: $purple;
+    color: #fff;
+}
+.intro{
+    h3,p{
+        color: #fff;
+    }
+    .pixel{
+        width: 80px;
+        height: auto;
+    }
+}
+.actions{
+    a:hover{
+        color: #fff;
+    }
+}
+.alert{
+    color: #fff;
+}

@@ -1,0 +1,10 @@
+@mixin headfont {
+    font-family: $mainfont;
+    font-weight: 600;
+    color: $black;
+    font-size: 50px;
+}
+@mixin secfont {
+    font-family: $mainfont;
+    font-weight: 500;
+}

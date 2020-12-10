@@ -1,0 +1,77 @@
+body {
+  background-color: #120e13;
+}
+
+h2, h5 {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  color: #000;
+  font-size: 50px;
+}
+
+h3, h4 {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.head img {
+  height: 60px;
+  width: auto;
+}
+
+#canvas {
+  border: solid 2px #7a1b97;
+}
+
+.controlcenter {
+  border: solid 4px #333232;
+  background-color: #878686;
+}
+
+.controlcenter p {
+  color: #000;
+}
+
+.controlcenter .arrows {
+  width: 150px;
+  height: auto;
+}
+
+.controlcenter a:hover {
+  color: #fff;
+}
+
+.otherusers {
+  border: solid 4px #333232;
+  background-color: #878686;
+}
+
+.btn {
+  font-family: "Rajdhani", sans-serif;
+  background-color: #7a1b97;
+  color: #fff;
+}
+
+.intro h3, .intro p {
+  color: #fff;
+}
+
+.intro .pixel {
+  width: 80px;
+  height: auto;
+}
+
+.actions a:hover {
+  color: #fff;
+}
+
+.alert {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
